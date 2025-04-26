@@ -80,6 +80,7 @@ def golden_spiral_segments_inward(img):
 def draw_inward_segments(img, coords):
     # we dont need segments , what we needed was just the coordinates so that we 
     # can draw the rectangles
+    #creating copy
     disp = img.copy()
     colors = [
         (255, 0,   0),
@@ -107,7 +108,8 @@ def main():
     if img is None:
         print("Could not load image:", args.image)
         return
-
+    
+    
     proc = preprocess_image(img)
     coords = golden_spiral_segments_inward(proc)
     vis = draw_inward_segments(proc, coords)
