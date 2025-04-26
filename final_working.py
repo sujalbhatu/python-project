@@ -136,9 +136,9 @@ def process_dataset(input_dir='input_images', output_csv='features.csv', output_
         writer.writerow(header)
         writer.writerows(data)
 
-    print(f"\n✅ Feature extraction and segmentation complete.")
-    print(f"👉 Features saved to '{output_csv}'")
-    print(f"👉 Segmented images saved under '{output_seg_dir}'")
+    print(f"\nFeature extraction and segmentation complete.")
+    print(f"Features saved to '{output_csv}'")
+    print(f"Segmented images saved under '{output_seg_dir}'")
 
 # --- Main ---
 if __name__ == '__main__':
